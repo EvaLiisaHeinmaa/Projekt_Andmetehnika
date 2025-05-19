@@ -3,10 +3,10 @@
 docker build -t superset-build .
 ```
 # Build the image (Uses the Dockerfile in this directory)
-docker build -t superset-build .
+docker build -t superset-kalad .
 
 # Secret key should be changed and kept secret, not published to GitHub :)
-docker run -d -v ${PWD}:/data:rw -p 8080:8088 -e "SUPERSET_SECRET_KEY=oiuetrjbgjruwet" --name superset superset-build
+docker run -d -v ${PWD}:/data:rw -p 8080:8088 -e "SUPERSET_SECRET_KEY=oiuetrjbgjruwet" --name superset superset-kalad
 
 # Explanation for the -v ${PWD}:/data:rw flag:
 # This flag mounts the current working directory (${PWD}) on the host machine to the /data directory inside the container.

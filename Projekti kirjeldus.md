@@ -1,4 +1,4 @@
-**Läänemere Kalapüük.**
+### Läänemere Kalapüük.
 
 Projekt
 Anmetehnika Mitteinformaatikutele (LTAT.02.026)
