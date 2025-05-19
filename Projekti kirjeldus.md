@@ -1,7 +1,7 @@
 ### Läänemere Kalapüük.
 
 Projekt
-Anmetehnika Mitteinformaatikutele (LTAT.02.026)
+Andmetehnika Mitteinformaatikutele (LTAT.02.026)
 Eva-Liisa Heinmaa
 Serle Kirispuu
 
