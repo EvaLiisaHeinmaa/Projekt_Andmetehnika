@@ -1,5 +1,3 @@
-
-
 import pandas as pd
 
 # Read the Excel file
@@ -24,13 +22,11 @@ df[fish_cols] = df[fish_cols].apply(pd.to_numeric, errors="coerce")
 # Add a numeric ID for each unique "Näitaja"
 df["Näitaja_ID"] = df["Näitaja"].astype("category").cat.codes
 
+# Move "Näitaja_ID" to the first column
+cols = df.columns.tolist()
+cols.remove("Näitaja_ID")
+cols.insert(0, "Näitaja_ID")
+df = df[cols]
+
 # Save to Parquet
 df.to_parquet("kalad.parquet", index=False)
-
-
-
-
-
-
-
-

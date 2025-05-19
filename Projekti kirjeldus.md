@@ -37,7 +37,6 @@ Andmetest on loodud kalad.parquet fail.
 Vt. koodi transform_kalad.py
 
 
-
 Andmeid uuendatakse iga aasta. Andmestik loodi 01.01.1992.
 Viimati muudeti 13:43 12.02.2025.
 Kodutöö raames vaadeldav andmestik sisaldab andmeid alates 2013.a. (OpenData portaal ei näita üle 10000 kirje ja kontot ei tahtnud hetkel teha.)
