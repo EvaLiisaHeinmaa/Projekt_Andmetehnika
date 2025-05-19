@@ -20,3 +20,34 @@ docker run -d -v ${PWD}:/data:rw -p 8080:8088 -e "SUPERSET_SECRET_KEY=oiuetrjbgj
 docker exec -it superset superset fab create-admin --username admin --firstname Admin --lastname Superset --email admin@example.com --password admin
 docker exec -it superset superset db upgrade
 docker exec -it superset superset init
+
+If you need to rebuild the image (e.g., after making changes to the Dockerfile or other configuration files), you can use the following commands:
+
+```bash
+# Remove the existing container (if running)
+docker stop superset
+docker rm superset
+
+# Rebuild the image
+docker build -t superset-build .
+
+# Run the container again with the updated image
+docker run -d -v ${PWD}:/data:rw -p 8080:8088 -e "SUPERSET_SECRET_KEY=your_new_secret_key" --name superset superset-build
+```
+# Update user, firstname, lastname, email and password as you see fit
+docker exec -it superset superset fab create-admin --username admin --firstname Admin --lastname Superset --email admin@example.com --passwordadmin 
+docker exec -it superset superset db upgrade
+docker exec -it superset superset init
+### Removing Dangling Images
+
+Dangling images are unused Docker images that can take up unnecessary space. To remove them, use the following command:
+
+```bash
+docker image prune -f
+
+### Important Notes
+
+- **Host Machine Execution**: All the commands in this README should be executed on the host machine where Docker is installed. While the project includes a `devcontainer`, these commands are not intended to be run inside the development container.
+- **Data Directory**: Ensure that the directory you mount with the `-v` flag contains the data files you want to use with Superset. This directory will be accessible inside the container at `/data`.
+
+Additional up-to-date documentation about Superset can be found at [https://superset.apache.org/docs/intro](https://superset.apache.org/docs/intro).
