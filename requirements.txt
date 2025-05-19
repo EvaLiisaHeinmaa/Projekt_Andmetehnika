@@ -1,0 +1,5 @@
+requests
+pandas
+pyarrow
+openpyxl
+duckdb==1.2.1
