@@ -45,7 +45,7 @@ docker build -t superset-build .
 docker run -d -v ${PWD}:/data:rw -p 8080:8088 -e "SUPERSET_SECRET_KEY=your_new_secret_key" --name superset superset-build
 ```
 # Update user, firstname, lastname, email and password as you see fit
-docker exec -it superset superset fab create-admin --username admin --firstname Admin --lastname Superset --email admin@example.com --password admin
+docker exec -it superset superset fab create-admin --username admin --firstname Admin --lastname Superset --email admin@example.com --passwordadmin 
 docker exec -it superset superset db upgrade
 docker exec -it superset superset init
 ### Removing Dangling Images
@@ -63,3 +63,4 @@ docker image prune -f
 
 Additional up-to-date documentation about Superset can be found at [https://superset.apache.org/docs/intro](https://superset.apache.org/docs/intro).
 
+All the requirements can be found in the requirements.txt.
