@@ -21,7 +21,7 @@ https://andmed.stat.ee/et/stat/majandus__kalandus/KA20/table/tableViewLayout2
 
 Läänemere kalapüük tegevusala ja kalaliigi järgi.
 
-Andmed näitavad toorkala püügi hulka tonnides Läänemerel järgneva näitaja põhjal:
+Andmed näitavad toorkala püügi hulka tonnides Läänemerel järgnevate näitajate põhjal:
 
 * Avamerepüük traallaevadega
 * Rannapüük
