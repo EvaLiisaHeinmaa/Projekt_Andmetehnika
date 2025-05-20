@@ -1,7 +1,7 @@
 ### Läänemere Kalapüük.
 
 Projekt
-Anmetehnika Mitteinformaatikutele (LTAT.02.026)
+Andmetehnika Mitteinformaatikutele (LTAT.02.026)
 Eva-Liisa Heinmaa
 Serle Kirispuu
 
@@ -21,11 +21,11 @@ https://andmed.stat.ee/et/stat/majandus__kalandus/KA20/table/tableViewLayout2
 
 Läänemere kalapüük tegevusala ja kalaliigi järgi.
 
-Andmed näitavad toorkala püügi hulka tonnides Läänemerel järgneva näitaja põhjal:
+Andmed näitavad toorkala püügi hulka tonnides Läänemerel järgnevate näitajate põhjal:
 
 * Avamerepüük traallaevadega
-* Kalapüük Läänemerel kokku
 * Rannapüük
+* Kalapüük Läänemerel kokku
 
 Välja on toodud nii kogu püütud toorkala kogus kui ka andmed liikide lõikes. Andmestikus on esindatud 20 eristatavat kalaliiki ning üks täiendav veerg pealkirjaga "muu kala".
 
