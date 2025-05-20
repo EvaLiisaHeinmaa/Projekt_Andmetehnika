@@ -34,7 +34,7 @@ Selles andmebaasis ei ole avaldatud väliskaubandusstatistika andmetabelid.
 
 **Andmete tüüp**
 
-Andmed on tabulaarsed ja tekst-tüüpi. Alla laetud Avaandmete portaalist .xcxl faili formaadis. Exceli fail on salvestatud viisil, mis säilitab õigesti Unicode-märgistuse, võimaldades erimärkide (sh täpitähtede) korrektset kuvamist ja töötlemist.
+Andmed on tabulaarsed ja tekst-tüüpi. Alla laetud Avaandmete portaalist .xlsx faili formaadis. Exceli fail on salvestatud viisil, mis säilitab õigesti Unicode-märgistuse, võimaldades erimärkide (sh täpitähtede) korrektset kuvamist ja töötlemist.
 
 
 **Uuenduste sagedus ja ajalooliste andmete kättesaadavus**
