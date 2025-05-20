@@ -40,7 +40,7 @@ Andmed on tabulaarsed ja tekst-tüüpi. Alla laetud Avaandmete portaalist .xlsx 
 **Uuenduste sagedus ja ajalooliste andmete kättesaadavus**
 
 Andmeid uuendatakse iga aasta. Andmestik loodi 01.01.1992.
-Viimati muudeti 13:43 12.02.2025. Metaandmed on viimati uundatud 27/03/2025
+Viimati muudeti 13:43 12.02.2025. Metaandmed on viimati uuendatud 27/03/2025.
 Kodutöö raames vaadeldav andmestik sisaldab andmeid alates 2013.a. (OpenData portaal ei näita üle 10000 kirje ja kontot ei tahtnud hetkel teha.)
 
 **Andmete omandiõigus, litsentsimine ja viitamisnõuded**
@@ -75,7 +75,7 @@ Asendada nullväärtused puuduvate väärtustega (NaN).
 
 **Andmete töötlemine**
 
-Andmetest on manuaalselt eemaldatud pealkirja ja märkuste read. Samuti kaks rida, kus ainukesek väärtuseks on näitaja.
+Andmetest on manuaalselt eemaldatud pealkirja ja märkuste read. Samuti kaks rida, kus ainukeseks väärtuseks on näitaja.
 Andmete lugemisel on kasutatud UTF-8 kodeeringut. (Eesti keelsed täpitähed)
 Andmed on viidud Pandas DataFrame'i, lugemiseks on kasutatud openpyxl mootorit, mis toetab .xlsx faile.
 Kaks esimest veergu on nimetatud ümber "Näitaja"-ks (andmeliik) ja "Aasta"-ks (aastaarv).
@@ -99,6 +99,10 @@ SQL-päringute tulemusi kasutati dünaamiliste graafikute ja tabelite loomiseks 
 Visualiseerimised hõlmasid:
 
 Kalapüügi koguste muutumist ajas
+Püütud kalade koguhulk püügimeetodi ja aastate lõikes
+Eesti rahvuskala räime püügikogused püügimeetodite lõikes
+Angerja püük
+Top 5 püütud kalaliiki
 Kalaliikide osakaalude võrdlust erinevatel aastatel
 Konkreetsete näitajate kaupa jaotust
 
