@@ -24,8 +24,8 @@ Läänemere kalapüük tegevusala ja kalaliigi järgi.
 Andmed näitavad toorkala püügi hulka tonnides Läänemerel järgneva näitaja põhjal:
 
 * Avamerepüük traallaevadega
-* Kalapüük Läänemerel kokku
 * Rannapüük
+* Kalapüük Läänemerel kokku
 
 Välja on toodud nii kogu püütud toorkala kogus kui ka andmed liikide lõikes. Andmestikus on esindatud 20 eristatavat kalaliiki ning üks täiendav veerg pealkirjaga "muu kala".
 
