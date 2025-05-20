@@ -78,3 +78,39 @@ In the SQL query editor that appears, you'll enter a SQL query to load your data
 SELECT * FROM read_parquet('/data/*.parquet')
 This SQL command tells Superset to read all Parquet files (just one in kalad case). Using the `read_parquet` function allows us to directly query and work with the Parquet files as if they were tables in a database.
 After entering the query, execute it by pressing the "Run selection" button. This action will load the data and display the results within SQL Lab. After confirming that the query works, save the dataset using "Save" -> "Save dataset" button.
+
+**Sharing Apache Superset dashboard**
+
+
+Export your dashboard as a zip file from Superset
+
+Commit the file to Guthub 
+
+Clone the repository
+
+Superset
+
+Insert the zip-file
+
+
+
+# Share Superset Running in Your Docker Container 
+
+NB! sharing your local Superset dashboard using an IP address like http://192.168.x.x:8080 only works if both users are on the same network (e.g., same Wi-Fi or hotspot). duckdb /app/superset_home/mydb.duckdb
+
+
+
+Create different users. (Alpha for editing, Gamma for viewing)
+- Editor user (Alpha)
+
+docker exec -it superset superset fab create-user --username editor --firstname Editor --lastname User --email editor@example.com --password editor --role Alpha
+
+
+- Viewer user (Gamma)
+
+docker exec -it superset superset fab create-user --username viewer --firstname Viewer --lastname User --email viewer@example.com --password viewer --role Gamma
+
+ Share the Superset Link 
+ http://<your-ip-address>:8080
+
+ Others can enter the superset via shared link by entering the assigned username and password. 
