@@ -82,15 +82,15 @@ After entering the query, execute it by pressing the "Run selection" button. Thi
 **Sharing Apache Superset dashboard**
 
 
-Export your dashboard as a zip file from Superset
+- Export your dashboard as a zip file from Superset
 
-Commit the file to Guthub 
+- Commit the file to Github 
 
-Clone the repository
+- Clone the repository/or download it directly from Github repository
 
-Superset
+- Open Superset
 
-Insert the zip-file
+- Import Superset Dashboard zip-file (no need to unzip it)
 
 
 

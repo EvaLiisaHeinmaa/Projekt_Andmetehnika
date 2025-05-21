@@ -34,18 +34,18 @@ Selles andmebaasis ei ole avaldatud väliskaubandusstatistika andmetabelid.
 
 **Andmete tüüp**
 
-Andmed on tabulaarsed ja tekst-tüüpi. Alla laetud Avaandmete portaalist .xcxl faili formaadis. Exceli fail on salvestatud viisil, mis säilitab õigesti Unicode-märgistuse, võimaldades erimärkide (sh täpitähtede) korrektset kuvamist ja töötlemist.
+Andmed on tabulaarsed ja tekst-tüüpi. Alla laetud Avaandmete portaalist .xlsx faili formaadis. Exceli fail on salvestatud viisil, mis säilitab õigesti Unicode-märgistuse, võimaldades erimärkide (sh täpitähtede) korrektset kuvamist ja töötlemist.
 
 
 **Uuenduste sagedus ja ajalooliste andmete kättesaadavus**
 
 Andmeid uuendatakse iga aasta. Andmestik loodi 01.01.1992.
-Viimati muudeti 13:43 12.02.2025. Metaandmed on viimati uundatud 27/03/2025
+Viimati muudeti 13:43 12.02.2025. Metaandmed on viimati uuendatud 27/03/2025.
 Kodutöö raames vaadeldav andmestik sisaldab andmeid alates 2013.a. (OpenData portaal ei näita üle 10000 kirje ja kontot ei tahtnud hetkel teha.)
 
 **Andmete omandiõigus, litsentsimine ja viitamisnõuded**
 
-Andmed on kogunud  Statistikaamet, autor - Veiko Berendsen Swen Peterson
+Andmed on kogunud  Statistikaamet, autor - Veiko Berendsen
 Litsents - Creative Commons Attribution 4.0 International
 
 
@@ -75,7 +75,7 @@ Asendada nullväärtused puuduvate väärtustega (NaN).
 
 **Andmete töötlemine**
 
-Andmetest on manuaalselt eemaldatud pealkirja ja märkuste read. Samuti kaks rida, kus ainukesek väärtuseks on näitaja.
+Andmetest on manuaalselt eemaldatud pealkirja ja märkuste read. Samuti kaks rida, kus ainukeseks väärtuseks on näitaja.
 Andmete lugemisel on kasutatud UTF-8 kodeeringut. (Eesti keelsed täpitähed)
 Andmed on viidud Pandas DataFrame'i, lugemiseks on kasutatud openpyxl mootorit, mis toetab .xlsx faile.
 Kaks esimest veergu on nimetatud ümber "Näitaja"-ks (andmeliik) ja "Aasta"-ks (aastaarv).
@@ -96,17 +96,23 @@ DuckDB sobib hästi väikeste ja keskmise suurusega andmestike töötlemiseks, k
 Andmete analüüsimiseks ja visualiseerimiseks kasutati Superseti SQL Lab-i, kus koostati SQL-päringud. Päringute abil filtreeriti ja grupeeriti andmestik diagrammide loomiseks. 
 SQL-päringute tulemusi kasutati dünaamiliste graafikute ja tabelite loomiseks Superseti kasutajaliideses.
 
-Visualiseerimised hõlmasid:
+Visualisatsioonid hõlmasid:
 
 Kalapüügi koguste muutumist ajas
+Püütud kalade koguhulk püügimeetodi ja aastate lõikes
+Eesti rahvuskala räime püügikogused püügimeetodite lõikes
+Angerja püük
+Top 5 ja 4 min püütud kalaliiki
 Kalaliikide osakaalude võrdlust erinevatel aastatel
 Konkreetsete näitajate kaupa jaotust
 
 **Ilmnenud probleemid**
 
 Apache Superset ei arvesta Pythoni koodis määratud veergude järjestust — veergude järjekord võib Supersetis kuvatuna erineda lähtekoodis määratust. (Näitaja_ID on pythoni koodiga määratud 1.veeruks, Supersetis on see viimasel kohal)
+Apache Superseti jagamise võimaluste lihtsustamiseks kulus päris palju aega. Lõpuks otsustasime ikka Dashboard faili alla laadimise ja seejärel Superseti üleslaadimise kasuks.
+Andmestik oli algselt laiformaadis (wide format), kus iga kalaliik oli omaette veerus.
+Analüüsi ja visualiseerimise jaoks teisendasime selle piklikku formaati (long format), kus liiginimed ja kogused on ridade kaupa. 
 
 **Kokkuvõte**
 
 Projekti käigus loodi toimiv töökeskkond andmete jagamiseks, töötlemiseks ja visualiseerimiseks. Andmestik salvestati .parquet-vormingus, mida kasutati visualiseeringute loomiseks Apache Superseti keskkonnas. Autorite oskuste areng antud töö keskkondade kasutamises oli märkimisväärse.
-
