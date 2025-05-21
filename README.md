@@ -68,7 +68,9 @@ Once logged in, follow these steps to connect to your data source:
 Click on the '+' icon, then select 'Connect Database'.
 In the 'Connect Database' screen, you'll see a 'Supported databases' dropdown menu. Select DuckDB from this list.
 For the URI, you need to specify the location of your database. 
+
 Enter **duckdb:////data/kalad.db** into the URI field.
+
 By connecting to the DuckDB database, you're setting up Superset to directly query and visualize the data you've transformed and stored. DuckDB is an in-process SQL OLAP Database Management System, perfect for analytical queries on large datasets, like the air quality data we're working with.
 
 To start visualizing the kalad data, we first need to create a dataset within Apache Superset. This dataset will be the foundation for our explorations and visualizations. Follow the steps below to create a dataset from the Parquet files we prepared earlier:
@@ -76,7 +78,9 @@ To start visualizing the kalad data, we first need to create a dataset within Ap
 From the top navigation bar, select SQL and then SQL Lab from the dropdown menu. SQL Lab is a flexible tool within Superset that allows for executing SQL queries on your connected databases.
 Within SQL Lab, you'll see an option to select your database. Choose the database connection you set up previously (the one connected to DuckDB).
 In the SQL query editor that appears, you'll enter a SQL query to load your data. Type or copy the following SQL command into the editor:
+
 **SELECT * FROM read_parquet('/data/*.parquet')**
+
 This SQL command tells Superset to read all Parquet files (just one in kalad case). Using the `read_parquet` function allows us to directly query and work with the Parquet files as if they were tables in a database.
 After entering the query, execute it by pressing the "Run selection" button. This action will load the data and display the results within SQL Lab. After confirming that the query works, save the dataset using "Save" -> "Save dataset" button.
 
