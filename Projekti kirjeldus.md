@@ -102,11 +102,8 @@ Kalapüügi koguste muutumist ajas
 Püütud kalade koguhulk püügimeetodi ja aastate lõikes
 Eesti rahvuskala räime püügikogused püügimeetodite lõikes
 Angerja püük
-<<<<<<< HEAD
 Top 5 ja 4 min püütud kalaliiki
-=======
 Top 5 püütud kalaliiki
->>>>>>> d56644d2ee4aaed0df8c122963e9f2979496263a
 Kalaliikide osakaalude võrdlust erinevatel aastatel
 Konkreetsete näitajate kaupa jaotust
 
